@@ -20,12 +20,6 @@ jobs:
           channel: 'stable'
           cache: true
       - run: flutter pub get
-
-      - name: Restore tiku.json
-        run: |
-          mkdir -p assets
-          curl -L -o assets/tiku.json https://github.com/jiangshy02/baoan_tiku_app/releases/download/v1/tiku.json
-
       - run: flutter build apk --release --target-platform android-arm64
       - uses: actions/upload-artifact@v4
         with:

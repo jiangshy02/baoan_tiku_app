@@ -1,0 +1,10 @@
+*.iml
+.idea/
+.vscode/
+*.lock
+*.log
+.DS_Store
+build/
+.gradle/
+*.jks
+*.keystore
